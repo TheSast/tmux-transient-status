@@ -19,4 +19,4 @@ if [ "$(tmux_option "@transient-status-fallback")" != "off" ]; then
 fi
 
 tmux set -g prefix None
-tmux bind -n "$TS_PREFIX" run -b "$TS_HOME/scripts/status.sh $TS_DELAY"
+tmux bind -n "$TS_PREFIX" run -b "$TS_HOME/scripts/status.sh $TS_PREFIX $TS_DELAY"

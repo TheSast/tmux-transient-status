@@ -23,6 +23,11 @@ set -g @transient-status-linger-time '2.5'
 The former controls wether or not to fall back to `C-b` as the prefix if you or another plugin forgot to set it. Can be either `on` or `off`.  
 The latter controls the amount of seconds the status bar will linger for after you are done with your command (set to `0` to disable lingering).  
 
+# FAQ
+
+## Why does `send-prefix` not work sometimes?
+`send-prefix` should work when the prefix is pressed. Currently I am not aware of a workaround to make it function in other situations too. (thus, currently `bind -n MY_KEY send-prefix` is equivalent to `bind MY_KEY send-prefix`)
+
 # Other plugins
 You might also like this plugin (shown in [preview](#preview)):
 
