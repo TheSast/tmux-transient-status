@@ -3,7 +3,7 @@ This tmux [tpm](https://github.com/tmux-plugins/tpm) plugin makes your status ba
 
 # Preview
 ![img/pretty_preview.gif](img/pretty_preview.gif)  
-<sup>\> [example wiht default status bar](img/preview.gif) <</sup>
+<sup>\> [example with default status bar](img/preview.gif) <</sup>
 
 # Installaiton
 You can install this plugin through [tpm](https://github.com/tmux-plugins/tpm):
