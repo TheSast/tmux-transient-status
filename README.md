@@ -1,5 +1,5 @@
 # Intro
-This tmux [tpm](https://github.com/tmux-plugins/tpm) plugin makes your status bar appear only when the prefix key is pressed (and for a small amout of time thereafter).
+This tmux [tpm](https://github.com/tmux-plugins/tpm) plugin makes your status bar appear only after the `<prefix>` key is pressed (and for a small amout of time thereafter).
 
 # Preview
 ![img/pretty_preview.gif](img/pretty_preview.gif)  
@@ -12,21 +12,23 @@ You can install this plugin through [tpm](https://github.com/tmux-plugins/tpm):
 ```tmux
 set -g @plugin 'thesast/tmux-transient-status'
 ```
-3. Install the plugin with `<prefix>I`, unless you changed `@tpm-install` then use that.
+3. Install the plugin with `<prefix>I`, unless you changed `@tpm-install`, in which case then use the keybind you set.
 
 # Configuration
 This plugins offers two options to be set in your `tmux.conf` with these defaults:
 ```tmux
 set -g @transient-status-fallback 'on'
-set -g @transient-status-linger-time '2.5'
+set -g @transient-status-delay '0.5'
+set -g @transient-status-stall '2.5'
 ```
-The former controls wether or not to fall back to `C-b` as the prefix if you or another plugin forgot to set it. Can be either `on` or `off`.  
-The latter controls the amount of seconds the status bar will linger for after you are done with your command (set to `0` to disable lingering).  
+The first controls wether or not to fall back to `C-b` as the `<prefix>` if you or another plugin forgot to set it. Can be either `on` or `off`.  
+The second one controls the amount of seconds the status bar will wait after you press `<prefix>` before appearing (set to `0` to make it instant).  
+The third one controls the amount of seconds the status bar will linger for after you are done with your command (set to `0` to disable lingering).  
 
 # FAQ
 
 ## Why does `send-prefix` not work sometimes?
-`send-prefix` should work when the prefix is pressed. Currently I am not aware of a workaround to make it function in other situations too. (thus, currently `bind -n MY_KEY send-prefix` is equivalent to `bind MY_KEY send-prefix`)
+`send-prefix` should work when the `<prefix>` is pressed. Currently I am not aware of a workaround to make it function in other situations too. (thus, currently `bind -n MY_KEY send-prefix` is equivalent to `bind MY_KEY send-prefix`)
 
 # Other plugins
 You might also like this plugin (shown in [preview](#preview)):
