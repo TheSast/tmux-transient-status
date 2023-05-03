@@ -28,7 +28,7 @@ The third one controls the amount of seconds the status bar will linger for afte
 # FAQ
 
 ## Why does `send-prefix` not work sometimes?
-`send-prefix` should work when the `<prefix>` is pressed. Currently I am not aware of a workaround to make it function in other situations too. (thus, currently `bind -n MY_KEY send-prefix` is equivalent to `bind MY_KEY send-prefix`)
+Make sure to source your `tmux.conf` (and run tpm in it!) after you bind a key to `send-prefix`. 
 
 # Other plugins
 You might also like this plugin (shown in [preview](#preview)):
