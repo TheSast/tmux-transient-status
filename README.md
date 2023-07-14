@@ -1,11 +1,17 @@
-# Intro
+Intro
+=======
+
 This tmux [tpm](https://github.com/tmux-plugins/tpm) plugin makes your status bar appear only after the `<prefix>` key is pressed (and for a small amout of time thereafter).
 
-# Preview
+Preview
+-------
+
 ![img/preview.gif](img/preview.gif)  
 <sup>\> [example with pretty status bar](img/pretty_preview.gif) <</sup>
 
-# Installaiton
+Installation
+------------
+
 You can install this plugin through [tpm](https://github.com/tmux-plugins/tpm):
 1. Install [tpm](https://github.com/tmux-plugins/tpm) (duh)  
 2. Add this line to your `tmux.conf`:  
@@ -14,7 +20,9 @@ set -g @plugin 'thesast/tmux-transient-status'
 ```
 3. Install the plugin with `<prefix>I`, unless you changed `@tpm-install`, in which case you should use the keybind you set.
 
-# Configuration
+Configuration
+-------------
+
 This plugins offers two options to be set in your `tmux.conf` with these defaults:
 ```tmux
 set -g @transient-status-delay '0.5'
@@ -23,19 +31,26 @@ set -g @transient-status-stall '2.5'
 The first one controls the amount of seconds the status bar will wait after you press `<prefix>` before appearing (set to `0` to make it instant).  
 The second one controls the amount of seconds the status bar will linger for after you are done with your command (set to `0` to disable lingering).  
 
-# FAQ
+FAQ
+---
 
-## Why does `send-prefix` not work sometimes?
+### Why does `send-prefix` not work sometimes?
+
 Make sure to source your `tmux.conf` (and run tpm in it!) after you bind a key to `send-prefix`, as the plugin is *not* hot-reloaded. 
 
-## Why is my status bar not hiding incorrectly?  
+### Why is my status bar not hiding correctly?  
+
 See the previous answer as it also applies to `<prefix>`.
 This plugin only deals with the primary `<prefix>` not the secondary one or any other extra ones.
 
-# Other plugins
+Other plugins
+-------------
+
 You might also like this plugin (shown in [preview](#preview)):
 
   - [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking powerline segments, written purely in bash. 
 
-# Licence
+Licence
+-------
+
 [MIT and Apache 2.0](COPYRIGHT.md)
