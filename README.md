@@ -7,7 +7,6 @@ Preview
 -------
 
 ![img/preview.gif](img/preview.gif)  
-<sup>\> [example with pretty status bar](img/pretty_preview.gif) <</sup>
 
 Installation
 ------------
