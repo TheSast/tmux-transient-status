@@ -1,4 +1,4 @@
-Intro
+Tmux Transient Status
 =======
 
 This tmux [tpm](https://github.com/tmux-plugins/tpm) plugin makes your status bar appear only after the `<prefix>` key is pressed (and for a small amout of time thereafter).
@@ -45,9 +45,15 @@ This plugin only deals with the primary `<prefix>` not the secondary one or any 
 Other plugins
 -------------
 
-You might also like this plugin (shown in [preview](#preview)):
+You might also like these plugins:
 
   - [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking powerline segments, written purely in bash. 
+  This was shown in [preview](#preview).
+
+  - [tmux-nav-master](https://github.com/TheSast/tmux-nav-master) - Easy cross-navigation with tmux and other programs. 
+
+  - [tmux-locker](https://github.com/TheSast/tmux-locker) - Lock away your tmux keybinds temporarely. 
+
 
 Licence
 -------
