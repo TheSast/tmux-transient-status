@@ -50,9 +50,9 @@ You might also like these plugins:
   - [tmux-powerline](https://github.com/erikw/tmux-powerline) - A tmux plugin giving you a hackable status bar consisting of dynamic & beautiful looking powerline segments, written purely in bash. 
   This was shown in [preview](#preview).
 
-  - [tmux-nav-master](https://github.com/TheSast/tmux-nav-master) - Easy cross-navigation with tmux and other programs. 
+  - [tmux-nav-master](https://github.com/TheSast/tmux-nav-master) - Easy cross-navigation between tmux and other terminal applications.
 
-  - [tmux-locker](https://github.com/TheSast/tmux-locker) - Lock away your tmux keybinds temporarely. 
+  - [tmux-keylocker](https://github.com/TheSast/tmux-locker) - Lock away your tmux keybinds temporarely. 
 
 
 Licence
